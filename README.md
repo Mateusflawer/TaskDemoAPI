@@ -1,4 +1,4 @@
-# FastAPI Task API
+# TaskDemoAPI
 
 Uma API RESTful simples com autenticação JWT para gerenciar tarefas.
 
