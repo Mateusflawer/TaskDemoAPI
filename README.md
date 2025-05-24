@@ -75,7 +75,6 @@ Uma API RESTful simples com autenticação JWT para gerenciar tarefas.
 - `src/schemas/`: Esquemas Pydantic.
 - `src/database/`: Banco de dados (simulado).
 
->>>>>>> d9a70fb3f9eb2f8c8c15e615babc0ec84ff16004
 ## Notas
 
 - Substitua a `SECRET_KEY` em `src/core/config.py` por uma chave forte em produção.
