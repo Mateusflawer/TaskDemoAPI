@@ -1,36 +1,44 @@
-FastAPI Task API
+# TaskDemoAPI
+
 Uma API RESTful simples com autenticação JWT para gerenciar tarefas.
-Instalação
 
-Clone o repositório:
-git clone <URL_DO_REPOSITORIO>
-cd project
+## Instalação
 
-Crie um ambiente virtual e instale as dependências:
-python -m venv venv
-source venv/bin/activate # No Windows: venv\Scripts\activate
-pip install -r requirements.txt
+1. Clone o repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd project
+   ```
 
-Execute a aplicação:
-uvicorn src.main:app --reload
+2. Crie um ambiente virtual e instale as dependências:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
-Acesse a API em http://127.0.0.1:8000/docs.
+3. Execute a aplicação:
+   ```bash
+   uvicorn src.main:app --reload
+   ```
 
-Uso
+4. Acesse a API em `http://127.0.0.1:8000/docs`.
 
-Login: Use o endpoint /token com username: user1 e password: senha123 para obter um token JWT.
-Endpoints protegidos: Inclua o token no cabeçalho Authorization: Bearer <token> para acessar os endpoints /tasks.
+## Uso
 
-Estrutura do Projeto
+- **Login**: Use o endpoint `/token` com `username: user1` e `password: senha123` para obter um token JWT.
+- **Endpoints protegidos**: Inclua o token no cabeçalho `Authorization: Bearer <token>` para acessar os endpoints `/tasks`.
 
-src/api/: Endpoints e roteadores da API.
-src/auth/: Módulo reutilizável para autenticação JWT.
-src/core/: Configurações globais.
-src/models/: Modelos de dados.
-src/schemas/: Esquemas Pydantic.
-src/database/: Banco de dados (simulado).
+## Estrutura do Projeto
 
-Notas
+- `src/api/`: Endpoints e roteadores da API.
+- `src/auth/`: Módulo reutilizável para autenticação JWT.
+- `src/core/`: Configurações globais.
+- `src/models/`: Modelos de dados.
+- `src/schemas/`: Esquemas Pydantic.
+- `src/database/`: Banco de dados (simulado).
 
-Substitua a SECRET_KEY em src/core/config.py por uma chave forte em produção.
-Considere usar um banco de dados real (como PostgreSQL) em vez do banco simulado.
+## Notas
+
+- Substitua a `SECRET_KEY` em `src/core/config.py` por uma chave forte em produção.
+- Considere usar um banco de dados real (como PostgreSQL) em vez do banco simulado.
