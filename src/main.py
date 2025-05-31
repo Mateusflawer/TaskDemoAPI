@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import uvicorn
 from .api.routers import api_router
 
-app = FastAPI(title='TaskDemoAPI', version='0.1.1')
+app = FastAPI(title="TaskDemoAPI", version="0.1.1")
 
 # Inclui os roteadores da API
 app.include_router(api_router)
